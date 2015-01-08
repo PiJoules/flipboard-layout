@@ -160,6 +160,9 @@ a.f-ref{
 	margin-top: -25px;
 	cursor: default;
 }
+.f-cover-flip:hover {
+	cursor: pointer;
+}
 .f-cover-flip.next {
 	right: 0;
 }

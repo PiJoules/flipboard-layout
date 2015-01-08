@@ -51,11 +51,11 @@
 					<h1>Spacy Flipping Pages with CSS3 &amp; jQuery <span>Inspired by <a href="http://flipboard.com/">Flipboard</a></span></h1>
 					<div class="f-cover-story"><span>Cover Story</span>Shuttle Enterprise Flight to New York</div>
 				</div>
-				<div class="f-cover-flip next">&lt; Next</div>
+				<div class="f-cover-flip next">Next &gt;</div>
 			</div>
 			
 			<div class="f-page">
-				<div class="f-cover-flip prev">Prev &gt;</div>
+				<div class="f-cover-flip prev">&lt; Prev</div>
 
 				<div class="f-title">
 					<a href="http://tympanus.net/Tutorials/CSS3FluidParallaxSlideshow/">Previous Demo</a>
@@ -86,11 +86,11 @@
 					<p>Qui trust fund artisan, ullamco jean shorts craft beer ad forage. Kale chips scenester stumptown fugiat, magna nostrud aliqua. Chambray nihil gastropub 3 wolf moon food truck, cillum leggings. Mumblecore do iphone umami pork belly. Enim banh mi ut consequat, mixtape bushwick portland leggings sustainable officia nulla. Tattooed cillum ex, cray letterpress locavore marfa synth organic etsy minim williamsburg exercitation twee. Single-origin coffee cillum nulla polaroid ethical, fugiat incididunt. Helvetica ex godard selvage, sriracha echo park ut portland forage cardigan. Retro readymade williamsburg cliche laboris pinterest. Mollit aliqua direct trade, tumblr vegan lo-fi shoreditch semiotics sed 8-bit. Incididunt keffiyeh PBR cray, assumenda yr butcher nisi. Mustache brunch kogi, farm-to-table small batch odio fugiat consequat fap esse quinoa. Iphone banh mi brunch jean shorts sartorial, letterpress culpa direct trade master cleanse banksy fap whatever quinoa biodiesel. Portland eiusmod minim nihil Austin, sartorial aesthetic occupy tofu sriracha pitchfork seitan.</p>
 				</div>
 
-				<div class="f-cover-flip next">&lt; Next</div>
+				<div class="f-cover-flip next">Next &gt;</div>
 			</div>
 			
 			<div class="f-page">
-				<div class="f-cover-flip prev">Prev &gt;</div>
+				<div class="f-cover-flip prev">&lt; Prev</div>
 
 				<div class="f-title">
 					<a href="http://tympanus.net/Tutorials/CSS3FluidParallaxSlideshow/">Previous Demo</a>
@@ -117,11 +117,11 @@
 					<p>Consectetur locavore brooklyn dreamcatcher, aesthetic anim dolor put a bird on it semiotics godard pork belly forage. VHS veniam aliqua thundercats dolore keffiyeh, direct trade authentic PBR eiusmod. Dolore veniam fanny pack, proident iphone mixtape irure sed. Lo-fi leggings stumptown cardigan etsy, pitchfork echo park terry richardson next level labore proident. Messenger bag cillum squid scenester, before they sold out dolor nostrud ad bicycle rights. Ut ex bicycle rights, wes anderson thundercats duis synth gluten-free hoodie twee. Four loko artisan viral, letterpress dreamcatcher twee yr cray vegan enim photo booth 3 wolf moon. Semiotics mlkshk anim sustainable butcher tempor. Odio single-origin coffee raw denim consequat mcsweeney's retro bespoke. Vero voluptate minim, letterpress accusamus twee farm-to-table pariatur cray.  Helvetica ex godard selvage, sriracha echo park ut portland forage cardigan. Retro readymade williamsburg cliche laboris pinterest. Mollit aliqua direct trade, tumblr vegan lo-fi shoreditch semiotics sed 8-bit. Incididunt keffiyeh PBR cray, assumenda yr butcher nisi. Mustache brunch kogi, farm-to-table small batch odio fugiat consequat fap esse quinoa. Iphone banh mi brunch jean shorts sartorial, letterpress culpa direct trade master cleanse banksy fap whatever quinoa biodiesel. Portland eiusmod minim nihil Austin, sartorial aesthetic occupy tofu sriracha pitchfork seitan.</p>
 				</div>
 
-				<div class="f-cover-flip next">&lt; Next</div>
+				<div class="f-cover-flip next">Next &gt;</div>
 			</div>
 			
 			<div class="f-page">
-				<div class="f-cover-flip prev">Prev &gt;</div>
+				<div class="f-cover-flip prev">&lt; Prev</div>
 
 				<div class="f-title">
 					<a href="http://tympanus.net/Tutorials/CSS3FluidParallaxSlideshow/">Previous Demo</a>
@@ -151,11 +151,11 @@
 					<p>Nisi anim raw denim, occupy seitan magna selvage pork belly leggings gluten-free. Street art consequat aliquip, echo park helvetica enim pariatur fanny pack aesthetic et laboris pickled jean shorts ethical. Austin pop-up next level esse, retro quinoa locavore mollit etsy elit nesciunt quis salvia beard. Quis magna consequat selvage, ullamco commodo exercitation. VHS polaroid fugiat quis gastropub, cosby sweater aliquip aesthetic velit jean shorts swag. Put a bird on it etsy pork belly synth nisi, pitchfork wes anderson semiotics cliche ea. Cliche officia cosby sweater ullamco, quis stumptown est blog vinyl pork belly. Helvetica ex godard selvage, sriracha echo park ut portland forage cardigan. Retro readymade williamsburg cliche laboris pinterest. Mollit aliqua direct trade, tumblr vegan lo-fi shoreditch semiotics sed 8-bit. Incididunt keffiyeh PBR cray, assumenda yr butcher nisi. Mustache brunch kogi, farm-to-table small batch odio fugiat consequat fap esse quinoa. Iphone banh mi brunch jean shorts sartorial, letterpress culpa direct trade master cleanse banksy fap whatever quinoa biodiesel. Portland eiusmod minim nihil Austin, sartorial aesthetic occupy tofu sriracha pitchfork seitan.</p>
 				</div>
 
-				<div class="f-cover-flip next">&lt; Next</div>
+				<div class="f-cover-flip next">Next &gt;</div>
 			</div>
 			
 			<div class="f-page f-cover-back">
-				<div class="f-cover-flip prev">Prev &gt;</div>
+				<div class="f-cover-flip prev">&lt; Prev</div>
 
 				<div id="codrops-ad-wrapper">
 					
@@ -184,7 +184,7 @@
 			
 				},
 				complete: function(){
-					$(".f-cover-flip.next").click(function(){
+					function turnToNextPage(){
 						// Flip towards left to next page
 						var startingX = Math.ceil($(window).width()/2) + 1; // start at a point on the right side of the screen
 						var endingX = startingX-1; // move to the left of the previous point
@@ -193,9 +193,9 @@
 						touchStartFunc(startingX, startingY);
 						touchMoveFunc(endingX, startingY);
 						touchEndFunc();
-					});
+					};
 
-					$(".f-cover-flip.prev").click(function(){
+					function turnToPrevPage(){
 						// Flip towards right to prev page
 						var startingX = Math.ceil($(window).width()/2) - 1; // start at a point on the left side of the screen
 						var endingX = startingX+1; // move to the right of the previous point
@@ -204,6 +204,28 @@
 						touchStartFunc(startingX, startingY);
 						touchMoveFunc(endingX, startingY);
 						touchEndFunc();
+					};
+
+					$(".f-cover-flip.next").click(function(){
+						turnToNextPage();
+					});
+
+					$(".f-cover-flip.prev").click(function(){
+						turnToPrevPage();
+					});
+
+					// Add arrow key functionality
+					$(document).keydown(function(e) {
+					    if (e.which === 37){ // left
+					    	turnToPrevPage();
+					    }
+					    else if (e.which === 39){ // right
+					    	turnToNextPage();
+					    }
+					    else {
+					    	return; // exit this handler for other keys
+					    }
+					    e.preventDefault(); // prevent the default action (scroll / move caret)
 					});
 				}
 			});
