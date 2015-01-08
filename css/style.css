@@ -147,11 +147,11 @@ a.f-ref{
 .page a:hover{
 	color: #000;
 }
+
 .f-cover-flip{
 	background: #000;
 	color: #ddd;
 	position: absolute;
-	right: 0px;
 	padding: 5px 30px 5px 20px;
 	font-size: 30px;
 	text-transform: uppercase;
@@ -160,6 +160,14 @@ a.f-ref{
 	margin-top: -25px;
 	cursor: default;
 }
+.f-cover-flip.next {
+	right: 0;
+}
+.f-cover-flip.prev {
+	left: 0;
+	z-index: 1;
+}
+
 .logo{
 	width: 180px;
 	height: 180px;
